@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumberyard Brewery and Events</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Header Section -->
+    <header class="bg-gray-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Lumberyard Brewery & Events</h1>
+        </div>
+    </header>
+
+    <!-- Persistent Welcome Message -->
+    <div class="bg-cover bg-center h-64" style="background-image: url('path/to/your/home-image.jpg');">
+        <div class="bg-black bg-opacity-50 h-full flex items-center justify-center">
+            <h2 class="text-4xl text-white">Welcome to Lumberyard Brewery & Events</h2>
+        </div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="bg-gray-800 text-white p-4">
+        <div class="container mx-auto flex justify-center">
+            <a href="#home" class="tab-link mr-4" data-tab="home">Home</a>
+            <a href="#about" class="tab-link mr-4" data-tab="about">About Us</a>
+            <a href="#beers" class="tab-link mr-4" data-tab="beers">Beers & Seltzers</a>
+            <a href="#events" class="tab-link mr-4" data-tab="events">Events</a>
+            <a href="#schedule" class="tab-link mr-4" data-tab="schedule">Schedule a Tour</a>
+            <a href="#contact" class="tab-link mr-4" data-tab="contact">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto p-4 flex-grow">
+        <!-- Home Section -->
+        <section id="home" class="tab-content">
+            <h2 class="text-3xl font-bold mb-4">Home</h2>
+            <p>Welcome to Lumberyard Brewery & Events! Explore our site to learn more about our unique venue and offerings.</p>
+            <!-- Add image for the home section here -->
+            <img src="wedding.jpg" alt="Lumberyard Brewery" class="rounded shadow mt-4">
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="tab-content hidden">
+            <h2 class="text-3xl font-bold mb-4">About Us</h2>
+            <p>Our brewery is located in a historic lumberyard, now transformed into a unique event space perfect for weddings and special events. Our mission is to create memorable experiences for our guests through our craft beers and exceptional venue.</p>
+            <!-- Add image for the about us section here -->
+            <img src="path/to/your/about-image.jpg" alt="About Us" class="rounded shadow mt-4">
+        </section>
+
+        <!-- Beers & Seltzers Section -->
+        <section id="beers" class="tab-content hidden">
+            <h2 class="text-3xl font-bold mb-4">Beers & Seltzers</h2>
+            <div id="beer-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Beers and Seltzers will be loaded here -->
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events" class="tab-content hidden">
+            <h2 class="text-3xl font-bold mb-4">Events</h2>
+            <p>Our venue is perfect for weddings, corporate events, and other special occasions. We offer customizable packages to meet your needs and ensure your event is a success.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-gray-200 p-4 rounded shadow">
+                    <h3 class="text-xl font-semibold mb-2">Weddings</h3>
+                    <p>Celebrate your special day in a unique and beautiful setting. Our team will work with you to create the wedding of your dreams.</p>
+                    <!-- Add image for weddings section here -->
+                    <img src="path/to/your/wedding-image.jpg" alt="Weddings" class="rounded shadow mt-4">
+                </div>
+                <div class="bg-gray-200 p-4 rounded shadow">
+                    <h3 class="text-xl font-semibold mb-2">Corporate Events</h3>
+                    <p>Host your next corporate event in our spacious and versatile venue. We offer all the amenities you need for a successful event.</p>
+                    <!-- Add image for corporate events section here -->
+                    <img src="path/to/your/corporate-image.jpg" alt="Corporate Events" class="rounded shadow mt-4">
+                </div>
+                <div class="bg-gray-200 p-4 rounded shadow">
+                    <h3 class="text-xl font-semibold mb-2">Special Occasions</h3>
+                    <p>Whether it's a birthday, anniversary, or other celebration, our venue provides the perfect backdrop for your special occasion.</p>
+                    <!-- Add image for special occasions section here -->
+                    <img src="path/to/your/occasion-image.jpg" alt="Special Occasions" class="rounded shadow mt-4">
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule a Tour Section -->
+        <section id="schedule" class="tab-content hidden">
+            <h2 class="text-3xl font-bold mb-4">Schedule a Tour</h2>
+            <form id="tour-form" class="bg-white p-4 rounded shadow-md">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700">Name</label>
+                    <input type="text" id="name" class="border p-2 w-full" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700">Email</label>
+                    <input type="email" id="email" class="border p-2 w-full" required>
+                </div>
+                <div class="mb-4">
+                    <label for="phone" class="block text-gray-700">Phone</label>
+                    <input type="tel" id="phone" class="border p-2 w-full" required>
+                </div>
+                <div class="mb-4">
+                    <label for="date" class="block text-gray-700">Preferred Date</label>
+                    <input type="date" id="date" class="border p-2 w-full" required>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Schedule Tour</button>
+            </form>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="tab-content hidden">
+            <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+            <form id="contact-form" class="bg-white p-4 rounded shadow-md">
+                <div class="mb-4">
+                    <label for="contact-name" class="block text-gray-700">Name</label>
+                    <input type="text" id="contact-name" class="border p-2 w-full" required>
+                </div>
+                <div class="mb-4">
+                    <label for="contact-email" class="block text-gray-700">Email</label>
+                    <input type="email" id="contact-email" class="border p-2 w-full" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700">Message</label>
+                    <textarea id="message" class="border p-2 w-full" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Send Message</button>
+            </form>
+            <div class="mt-4">
+                <h3 class="text-xl font-semibold">Our Location</h3>
+                <p>123 Brewery Lane, Lumberyard Town, USA</p>
+                <p>Email: info@lumberyardbrewery.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white p-4 mt-auto">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Lumberyard Brewery & Events. All rights reserved.</p>
+            <div class="mt-2">
+                <a href="https://www.facebook.com" target="_blank" class="mr-2">Facebook</a>
+                <a href="https://www.instagram.com" target="_blank" class="mr-2">Instagram</a>
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

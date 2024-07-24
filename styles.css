@@ -1,0 +1,22 @@
+/* Additional custom styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+#home {
+    background-size: cover;
+    background-position: center;
+}
+
+.tab-content.hidden {
+    display: none;
+}
+
+.tab-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    margin-top: auto;
+}
